@@ -74,4 +74,7 @@ client.connect(err => {
     })
 });
 
+app.get('/', (req, res) => {
+    res.send('Welcome to my server site');
+})
 app.listen(process.env.PORT || 5000);
